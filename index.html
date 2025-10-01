@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Keith Gotohori — Do-or-Die Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-wrap">
+      <div class="loader-logo" id="loaderLogo">
+        <svg width="56" height="56" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="36" stroke="rgba(255,255,255,0.12)" stroke-width="6" />
+          <path d="M30 68c10-20 40-20 50 0" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".9"/>
+        </svg>
+      </div>
+      <div class="loader-text">Do-or-Die Portfolio</div>
+    </div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor">
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="cursor-core"></div>
+  </div>
+
+  <header>
+    <div class="brand">
+      <div class="logo-circle" aria-hidden="true">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 12h16M12 4v16" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h1>Keith Gotohori</h1>
+    </div>
+
+    <nav aria-label="Main Navigation">
+      <a href="#projects">Work</a>
+      <a href="#about">About</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hamburger" id="hamburger" aria-hidden="true">
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Mobile nav -->
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <nav style="display:flex;flex-direction:column;gap:18px">
+      <a href="#projects">Work</a>
+      <a href="#about">About</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+      <a class="button" href="#contact">Start Project</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h2>Bold design. Surgical clarity. <span class="anim-words" id="animWords">Creative — Professional — Skilled</span></h2>
+          <p class="tagline">I’m <strong>Keith Gotohori</strong>, a responsive web designer with 3 years of experience crafting with HTML, CSS, and JavaScript. I thrive on constraints and deliver fast, memorable, and resilient web experiences that convert and inspire.</p>
+
+          <div class="stack">
+            <div>
+              <a class="button" href="#contact">Start a Project</a>
+              <span style="margin-left:12px;color:var(--muted);font-weight:600">48hr one-page turnaround</span>
+            </div>
+            <div class="muted-small">Available for remote work — built with grit & proven by outcomes.</div>
+          </div>
+        </div>
+
+        <div class="profile-wrap">
+          <div class="profile" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1531123414780-f1d7a5ea3f27?q=80&w=800&auto=format&fit=crop" alt="Profile picture of Keith Gotohori">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h3 class="section-title">Selected Work</h3>
+      <div class="project-grid">
+        <article class="project-card" style="background-image:url('https://via.placeholder.com/600x400');">
+          <h3>Café — Responsive Redesign</h3>
+          <p class="muted-small">Mobile-first redesign that increased clarity and online orders. Built fast, deployed to GitHub Pages.</p>
+        </article>
+
+        <article class="project-card" style="background-image:url('https://via.placeholder.com/600x400');">
+          <h3>Personal Brand Landing</h3>
+          <p class="muted-small">A conversion-focused landing page with a sticky CTA and micro-interactions.</p>
+        </article>
+
+        <article class="project-card" style="background-image:url('https://via.placeholder.com/600x400');">
+          <h3>E-commerce Landing Concept</h3>
+          <p class="muted-small">Bright, clean hero and fast checkout flow that prioritises mobile buyers.</p>
+        </article>
+
+        <article class="project-card" style="background-image:url('https://via.placeholder.com/600x400');">
+          <h3>Portfolio Showcase</h3>
+          <p class="muted-small">Dynamic, responsive, and interactive portfolio layouts with full responsiveness.</p>
+        </article>
+
+        <article class="project-card" style="background-image:url('https://via.placeholder.com/600x400');">
+          <h3>Non-Profit Web Redesign</h3>
+          <p class="muted-small">Accessible, responsive, and community-focused design that amplified engagement.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div>
+        <h3 class="section-title">About Me</h3>
+        <p class="muted-small">
+          I am a passionate, self-taught responsive web designer who turns limitations into opportunities. With 3 years of experience building with HTML, CSS, and JavaScript, I combine technical craft with creativity. My bio is simple: I love designing websites that people remember. I specialize in bold layouts, fast performance, and designs that make small businesses stand out. This is not just a career—it’s my grit and my art.
+        </p>
+      </div>
+
+      <aside class="card">
+        <h4>Quick facts</h4>
+        <div class="muted-small">3 years of personal projects • Responsive Design Certificate • HTML • CSS • JavaScript • 500+ LinkedIn connects</div>
+        <div style="margin-top:12px"><a class="button" href="#contact">Hire Me</a></div>
+      </aside>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+      <h3 class="section-title">Pricing Packages</h3>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h4>Starter</h4>
+          <p class="muted-small">One-page responsive site</p>
+          <p class="price">$99</p>
+          <a class="button glow" href="https://wa.me/27634668020?text=I%20want%20to%20buy%20the%20Starter%20package">Buy</a>
+        </div>
+        <div class="pricing-card">
+          <h4>Professional</h4>
+          <p class="muted-small">Up to 5 pages, SEO-ready</p>
+          <p class="price">$299</p>
+          <a class="button glow" href="https://wa.me/27634668020?text=I%20want%20to%20buy%20the%20Professional%20package">Buy</a>
+        </div>
+        <div class="pricing-card">
+          <h4>Do-or-Die</h4>
+          <p class="muted-small">Custom dynamic design + priority support</p>
+          <p class="price">$499</p>
+          <a class="button glow" href="https://wa.me/27634668020?text=I%20want%20to%20buy%20the%20Do-or-Die%20package">Buy</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <h3 class="section-title">Let’s build something wild</h3>
+      <form onsubmit="event.preventDefault();alert('Message sent — placeholder (replace with form handler)');" style="margin-top:18px;display:grid;gap:12px;max-width:680px">
+        <input type="text" placeholder="Your name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Project brief" rows="5"></textarea>
+        <button class="button" type="submit">Send message</button>
+      </form>
+      <div class="contact-links">
+        <a href="mailto:Keithmyth2@yahoo.com">📧 Email Me</a>
+        <a href="tel:+27634668020">📞 Call Me</a>
+        <a href="https://wa.me/27634668020">💬 WhatsApp</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="muted-small">© Keith Gotohori • Built with grit</div>
+        <div class="muted-small">Made for small businesses • 48hr sites</div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Floating buttons -->
+  <div class="floating-buttons">
+    <a href="https://www.linkedin.com/in/keith-gotohori-580b38232?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="float-btn linkedin">in</a>
+    <a href="https://www.freecodecamp.org/wreckless" target="_blank" class="float-btn freecodecamp">FCC</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
